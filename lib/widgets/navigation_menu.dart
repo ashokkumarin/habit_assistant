@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myhabitassistant/screens/settings_page.dart';
+import 'package:myhabitassistant/screens/main_page.dart';
 
 class NavigationDrawer extends StatelessWidget {
   const NavigationDrawer({super.key});
@@ -31,6 +32,17 @@ class NavigationDrawer extends StatelessWidget {
             onTap: () {
               Navigator.pop(context);
               // Handle Home tap
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.home),
+            title: Text('Main'),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => MainPage()),
+              );
             },
           ),
           ListTile(

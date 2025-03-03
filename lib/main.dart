@@ -15,9 +15,8 @@ class MyApp extends StatelessWidget {
       title: 'Habit Assistant',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 18, 70, 148)),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 22, 148, 18)),
       ),
-      debugShowCheckedModeBanner: false,
       home: const MyHomePage(title: 'Habit Assistant'),
     );
   }
